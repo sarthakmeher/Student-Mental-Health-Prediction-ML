@@ -1,12 +1,12 @@
-Student Mental Health Prediction
+# Student Mental Health Prediction
 A machine learning application that estimates a student mental health score (0–10) from lifestyle, academic, stress, and social-media usage information. The project combines a trained regression model, a FastAPI prediction service, and a lightweight web interface.
 Important: This project is for educational and informational purposes only. Its output is not a medical diagnosis, clinical assessment, or substitute for professional mental-health support.
 
-Live Application
+# Live Application
 - Web application: https://student-mental-health-prediction-ml.onrender.com
 - GitHub repository: https://github.com/sarthakmeher/Student-Mental-Health-Prediction-ML
 The frontend JavaScript in this repository is configured to send prediction requests to the deployed API URL above.
-Project Overview
+# Project Overview
 The model uses information about a student's profile and daily routine to predict a numerical mental-health score. The input features include:
 - Age, gender, country, and academic level
 - Most-used social-media platform and primary purpose of use
@@ -14,14 +14,14 @@ The model uses information about a student's profile and daily routine to predic
 - Study hours, physical activity hours, and sleep hours per night
 - Self-reported stress level
 The notebook loads a dataset named Student_Social_Media_And_Mental_Health_Impact.csv and performs data inspection, preprocessing, model training, hyperparameter tuning, and evaluation.
-Key Features
+# Key Features
 - Interactive web form: Collects student profile, academic, digital-habit, and lifestyle information.
 - Input validation: Checks required fields and numeric ranges before submitting a prediction.
 - Machine learning inference: Uses a saved scikit-learn regression pipeline to estimate the score.
 - REST API: Exposes a FastAPI /predict endpoint.
 - Prediction visualization: Displays the predicted score on a 0–10 gauge with a descriptive signal band.
 - Reusable trained model: Loads Mental_Health_Model.pkl for inference.
-Tech Stack
+## Tech Stack
 Area	Tools
 Programming language	Python, JavaScript
 Data analysis	Pandas, NumPy
@@ -32,7 +32,7 @@ Frontend	HTML, CSS, JavaScript
 Notebook	Jupyter Notebook / Google Colab
 
 
-Machine Learning Workflow
+## Machine Learning Workflow
 1. Data loading: Read the student social-media and mental-health dataset.
 2. Exploratory data analysis: Inspect dataset dimensions, columns, missing values, duplicates, and feature distributions.
 3. Preprocessing: Apply feature-specific transformations to numerical and categorical columns.
@@ -40,7 +40,7 @@ Machine Learning Workflow
 5. Hyperparameter tuning: Use RandomizedSearchCV with 5-fold cross-validation for the Random Forest pipeline.
 6. Evaluation: Compare models using R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
 7. Model saving: Persist the trained pipeline with Joblib for use by the API.
-Model Evaluation
+## Model Evaluation
 The results recorded in ML_Project.ipynb are:
 Model	Test R²	Test MAE	Test RMSE
 Linear Regression	0.7398	0.5362	0.6760
