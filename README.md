@@ -132,38 +132,6 @@ The API will be available at:
 5. Run the frontend locally
 Open index.html using a local development server, such as the VS Code Live Server extension.
 
-The frontend currently sends requests to the deployed API:
-const API_BASE = "https://student-mental-health-prediction-ml.onrender.com";
-To use your local backend instead, change it to:
-const API_BASE = "http://127.0.0.1:8000";
-Keep the backend running while using the local frontend.
-API Usage
-Endpoint
-POST /predict
-Example request
-{
-  "age": 21,
-  "gender": "Male",
-  "country": "India",
-  "academic_level": "Undergraduate",
-  "most_used_platform": "Instagram",
-  "purpose_of_use": "Education",
-  "avg_daily_usage_hours": 4.5,
-  "daily_unlocks": 120,
-  "study_hours": 5.0,
-  "physical_activity_hours": 1.5,
-  "sleep_hours_per_night": 7.0,
-  "stress_level": "Medium"
-}
-Example response
-{
-  "predicted_mental_health_score": 7.12
-}
-The number above is an illustrative response format, not a guaranteed output for the example input.
-Dataset
-The notebook expects a CSV file named:
-Student_Social_Media_And_Mental_Health_Impact.csv
-Place the dataset in the project root before running the notebook. The CSV is referenced by the notebook but is not currently listed among the repository files.
 
 The notebook's inspected dataset contains 5,000 rows and 13 columns, including the target column Mental_Health_Score.
 Notes and Limitations
