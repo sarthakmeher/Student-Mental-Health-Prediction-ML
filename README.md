@@ -51,30 +51,62 @@ The notebook loads a dataset named Student_Social_Media_And_Mental_Health_Impact
 6. Evaluation: Compare models using R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
 7. Model saving: Persist the trained pipeline with Joblib for use by the API.
 
-## Model Evaluation
-The results recorded in ML_Project.ipynb are:
-Model	Test R²	Test MAE	Test RMSE
-Linear Regression	0.7398	0.5362	0.6760
-Random Forest (default)	0.8772	0.3478	0.4644
-Random Forest (tuned)	0.8652	0.3689	0.4867
+# Model Performance Evaluation
+
+The following results were obtained during model evaluation on the test dataset:
+
+| Model | Test R² | Test MAE | Test RMSE |
+|---|---:|---:|---:|
+| Linear Regression | 0.7398 | 0.5362 | 0.6760 |
+| Random Forest (Default) | 0.8772 | 0.3478 | 0.4644 |
+| Random Forest (Tuned) | 0.8652 | 0.3689 | 0.4867 |
+
+The Default Random Forest model achieved the highest test R² score of 0.8772 among the three evaluated models.
+
+The Tuned Random Forest model was selected and saved as `Mental_Health_Model.pkl`, which is loaded by the FastAPI backend for making predictions.
 
 
-The default Random Forest has the highest test R² among these three recorded runs. The tuned Random Forest was selected and saved in the notebook as Mental_Health_Model.pkl; the API loads that saved artifact.
-Repository Structure
+# Repository Structure
+
+```text
 Student-Mental-Health-Prediction-ML/
 │
-├── ML_Project.ipynb          # Data analysis, preprocessing, training and evaluation
-├── Mental_Health_Model.pkl   # Saved machine learning pipeline
-├── ml.py                     # FastAPI backend and prediction endpoint
-├── main.py                   # Minimal Python entry point
-├── index.html                # Web application interface
-├── style.css                 # Frontend styling
-├── script.js                 # Form handling and API integration
-├── requirements.txt          # Python dependencies
-├── pyproject.toml            # Project metadata and dependencies
-├── .python-version           # Python version setting
-├── uv.lock                   # uv dependency lock file
+├── ML_Project.ipynb
+│   └── Data analysis, preprocessing, model training, and evaluation
+│
+├── Mental_Health_Model.pkl
+│   └── Saved trained machine learning pipeline
+│
+├── ml.py
+│   └── FastAPI backend and prediction endpoint
+│
+├── main.py
+│   └── Python application entry point
+│
+├── index.html
+│   └── Web application interface
+│
+├── style.css
+│   └── Frontend styling
+│
+├── script.js
+│   └── Form handling and API integration
+│
+├── requirements.txt
+│   └── Python dependencies
+│
+├── pyproject.toml
+│   └── Project metadata and dependencies
+│
+├── .python-version
+│   └── Python version configuration
+│
+├── uv.lock
+│   └── Dependency lock file
+│
 └── .gitignore
+    └── Git ignored files and directories
+```
 
 Getting Started
 1. Clone the repository
