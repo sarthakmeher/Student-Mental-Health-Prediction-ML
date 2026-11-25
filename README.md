@@ -21,18 +21,28 @@ The notebook loads a dataset named Student_Social_Media_And_Mental_Health_Impact
 - REST API: Exposes a FastAPI /predict endpoint.
 - Prediction visualization: Displays the predicted score on a 0–10 gauge with a descriptive signal band.
 - Reusable trained model: Loads Mental_Health_Model.pkl for inference.
-## Tech Stack
-Area	Tools
-Programming language	Python, JavaScript
-Data analysis	Pandas, NumPy
-Machine learning	Scikit-learn
-Model persistence	Joblib
-Backend API	FastAPI, Uvicorn, Pydantic
-Frontend	HTML, CSS, JavaScript
-Notebook	Jupyter Notebook / Google Colab
+  
+# Technology Stack
 
+| Technology | Purpose |
+|---|---|
+| Python | Model development, training, and prediction |
+| Pandas | Data loading, cleaning, and manipulation |
+| NumPy | Numerical computations and array operations |
+| Scikit-learn | Machine learning model development and evaluation |
+| Random Forest Regressor | Predicting student mental health scores |
+| Linear Regression | Baseline regression model for comparison |
+| Matplotlib | Data visualization and exploratory data analysis |
+| Joblib | Saving and loading the trained ML model |
+| FastAPI | Building REST API for model predictions |
+| Uvicorn | Running the FastAPI backend server |
+| Pydantic | API request validation and data handling |
+| HTML | Structuring the web application |
+| CSS | Styling and designing the user interface |
+| JavaScript | Frontend interactions and API integration |
+| Jupyter Notebook | Exploratory data analysis, preprocessing, model training, and evaluation |
 
-## Machine Learning Workflow
+# Machine Learning Workflow
 1. Data loading: Read the student social-media and mental-health dataset.
 2. Exploratory data analysis: Inspect dataset dimensions, columns, missing values, duplicates, and feature distributions.
 3. Preprocessing: Apply feature-specific transformations to numerical and categorical columns.
@@ -40,6 +50,7 @@ Notebook	Jupyter Notebook / Google Colab
 5. Hyperparameter tuning: Use RandomizedSearchCV with 5-fold cross-validation for the Random Forest pipeline.
 6. Evaluation: Compare models using R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
 7. Model saving: Persist the trained pipeline with Joblib for use by the API.
+
 ## Model Evaluation
 The results recorded in ML_Project.ipynb are:
 Model	Test R²	Test MAE	Test RMSE
@@ -64,6 +75,7 @@ Student-Mental-Health-Prediction-ML/
 ├── .python-version           # Python version setting
 ├── uv.lock                   # uv dependency lock file
 └── .gitignore
+
 Getting Started
 1. Clone the repository
 git clone https://github.com/sarthakmeher/Student-Mental-Health-Prediction-ML.git
@@ -138,4 +150,5 @@ Author
 Sarthak Meher
 - GitHub: https://github.com/sarthakmeher
 - Project: https://github.com/sarthakmeher/Student-Mental-Health-Prediction-ML
+  
 If you find this project useful, consider giving the repository a ⭐.
