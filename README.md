@@ -5,7 +5,7 @@ Important: This project is for educational and informational purposes only. Its 
 # Live Application
 - Web application: https://student-mental-health-prediction-ml.onrender.com
 - GitHub repository: https://github.com/sarthakmeher/Student-Mental-Health-Prediction-ML
-The frontend JavaScript in this repository is configured to send prediction requests to the deployed API URL above.
+
 # Project Overview
 The model uses information about a student's profile and daily routine to predict a numerical mental-health score. The input features include:
 - Age, gender, country, and academic level
