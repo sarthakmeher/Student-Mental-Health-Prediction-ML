@@ -2,10 +2,6 @@
 A machine learning application that estimates a student mental health score (0–10) from lifestyle, academic, stress, and social-media usage information. The project combines a trained regression model, a FastAPI prediction service, and a lightweight web interface.
 Important: This project is for educational and informational purposes only. Its output is not a medical diagnosis, clinical assessment, or substitute for professional mental-health support.
 
-# Live Application
-- Web application: https://student-mental-health-prediction-ml.onrender.com
-- GitHub repository: https://github.com/sarthakmeher/Student-Mental-Health-Prediction-ML
-
 # Project Overview
 The model uses information about a student's profile and daily routine to predict a numerical mental-health score. The input features include:
 - Age, gender, country, and academic level
